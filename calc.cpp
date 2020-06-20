@@ -17,7 +17,7 @@ Calc::~Calc() {
 }
 
 const Calc& Calc::operator=(const Calc &rhs) {
-    if(this != rhs) {
+    if(this != &rhs) {
         Calc temp(rhs);
         std:swap(storedExpressions, temp.storedExpressions);
         std::swap(stored, temp.stored);
