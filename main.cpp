@@ -5,7 +5,7 @@ int main() {
     int sentinal = 0;
 
     do {
-        std::cout << "Please enter the number of expressions you would like to store: " << std::endl;
+        std::cout << "\nPlease enter the number of expressions you would like to store: " << std::endl;
         int values;
         std::cin >> values;
 
@@ -21,7 +21,7 @@ int main() {
                 while(shouldContinue) {
                     std::string userString;
 
-                    std::cout << "Please enter your expression (Enter 'STOP' to halt this input stream): \n" << " = "
+                    std::cout << "\nPlease enter your expression (Enter 'STOP' to halt this input stream): \n" << " = "
                               << answer << " + ... " << std::endl;
                     std::cin >> userString;
 

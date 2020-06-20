@@ -1,6 +1,5 @@
 #include <iostream>
 #include "calc.h"
-#include "stddef.h"
 #include <cmath>
 
 Calc::Calc(int values):storedExpressions(new std::string[values]), stored(0) {}
