@@ -1,3 +1,6 @@
+#ifndef CALC_H
+#define CALC_H
+
 #include <string>
 
 class Calc {
@@ -5,7 +8,7 @@ public:
     Calc(int val);
     Calc(const Calc &rhs);
     ~Calc();
-    const Calc & operator=(const Calc &rhs);
+    const Calc& operator=(const Calc &rhs);
     double process(std::string userInput, double preValue);
     void print();
     std::string* storedExpressions;
@@ -15,3 +18,5 @@ public:
 private:
     size_t stored;
 };
+
+#endif
